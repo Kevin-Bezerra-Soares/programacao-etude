@@ -1,0 +1,30 @@
+Programa: Fazer Pipoca
+// Autor: Kevin BS
+// Licensa: toda sua
+// Disciplina: Lógica de Programação 1
+// Professor(a): Sandra Geroldo
+// Data: 15/02/2025
+
+Var:
+    milho: real
+    oleo: real
+    sazon: real
+
+Início: 
+    // Preparação dos ingredientes
+    milho <- 0.5   // xícaras de milho para pipoca
+    oleo  <- 3     // colheres de sopa de óleo vegetal, muito saudável!
+    sazon <- 1     // colher de chá de sazón (ajustar a gosto)
+
+    // Passos
+
+    escreva("Aqueça a panela em fogo médio.")
+    escreva("Adicione ", oleo, " colheres de sopa de óleo na panela.")
+    escreva("Coloque ", milho, " xícara de milho para pipoca na panela.")
+    escreva("Tampe a panela e agite levemente para distribuir o milho.")
+    escreva("Aguarde até que o milho comece a estourar.")
+    escreva("Agite a panela ocasionalmente para evitar que os grãos queimem.")
+    escreva("Continue agitando até que o som dos estouros diminua.")
+    escreva("Retire a panela do fogo e destampe com cuidado.")
+    escreva("Adicione ", sazon, " a gosto e misture bem.")
+    escreva("Sirva a pipoca em uma tigela e aproveite!")
