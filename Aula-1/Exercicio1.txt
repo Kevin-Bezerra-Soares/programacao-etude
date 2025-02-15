@@ -28,3 +28,5 @@ Início:
     escreva("Retire a panela do fogo e destampe com cuidado.")
     escreva("Adicione ", sazon, " a gosto e misture bem.")
     escreva("Sirva a pipoca em uma tigela e aproveite!")
+    
+Fimalgoritmo.
