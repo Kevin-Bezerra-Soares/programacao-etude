@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercicio2 {
     public static void main (String[] args) {
         int num1, num2, num3, soma;
-        java.util.Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
 
         System.out.print (" Digite um número inteiro: ");
         num1 = entrada.nextInt();
