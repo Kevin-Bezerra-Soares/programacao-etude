@@ -1,13 +1,19 @@
-import java.util.Scanner;
+//import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Exercicio6 {
     public static void main (String args[]){
+        String salario;
         float ordenado;
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
 
-        System.out.print(" Informe seu salário: ");
-        ordenado = sc.nextFloat();
+        salario = JOptionPane.showInputDialog(" Informe seu salário: ");
 
-        System.out.println(" Com o aumento de 10% ficou: " + (ordenado * 1.10));
+        //ordenado = sc.nextFloat();
+        ordenado = Float.parseFloat(salario);
+
+        JOptionPane.showMessageDialog(null," Com o aumento de 10% ficou: " + (ordenado * 1.10),"reais", JOptionPane.PLAIN_MESSAGE);
+
+        System.exit(0);
     }    
 }
