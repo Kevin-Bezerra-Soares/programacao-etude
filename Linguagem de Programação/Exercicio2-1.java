@@ -1,4 +1,5 @@
 /// Programa que calcula a média artimética de 3 números;
+/// Aula 1
 
 import java.util.Scanner;
 

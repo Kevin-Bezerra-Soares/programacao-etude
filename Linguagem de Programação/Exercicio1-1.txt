@@ -4,6 +4,7 @@ Programa: Fazer Pipoca
 // Disciplina: Lógica de Programação 1
 // Professor(a): Sandra Geroldo
 // Data: 15/02/2025
+// Aula: 1
 
 Var:
     milho: real
