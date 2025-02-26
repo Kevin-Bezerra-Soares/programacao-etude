@@ -4,7 +4,7 @@
 
 import javax.swing.JOptionPane;
 
-public class Exercicio6 {
+public class Exercicio6_1 {
     public static void main (String args[]){
         String salario;
         float ordenado;

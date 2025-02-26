@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Exercicio4_1 {
     public static void main (String args[]){
         int numero1, numero2;
         Scanner sc = new Scanner(System.in);
