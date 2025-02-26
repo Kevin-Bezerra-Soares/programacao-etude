@@ -1,3 +1,5 @@
+/// Programa que faz a multiplicação de 2 números;
+
 import java.util.Scanner;
 
 public class Exercicio4 {

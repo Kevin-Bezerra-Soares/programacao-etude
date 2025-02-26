@@ -1,3 +1,5 @@
+/// Programa que executa a soma de dois números;
+
 import java.util.Scanner;
 
 public class Exemplo {

@@ -1,4 +1,6 @@
-//import java.util.Scanner;
+// Programa que calcula o aumento de 10%
+/// A emtrada e saída são por caixa de diálogo;
+
 import javax.swing.JOptionPane;
 
 public class Exercicio6 {

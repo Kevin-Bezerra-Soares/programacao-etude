@@ -1,3 +1,5 @@
+/// Programa que soma 100 a qualquer número;
+
 import java.util.Scanner;
 
 public class Exercicio3 {

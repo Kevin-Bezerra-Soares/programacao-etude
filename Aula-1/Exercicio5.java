@@ -1,3 +1,5 @@
+/// Programa que lê a indade e informa a quantidade de dis vividos; 
+
 import java.util.Scanner;
 
 public class Exercicio5 {
