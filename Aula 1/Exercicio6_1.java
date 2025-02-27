@@ -1,5 +1,5 @@
 // Programa que calcula o aumento de 10%
-/// A emtrada e saída são por caixa de diálogo;
+/// A emtrada e saída são por caixa de diálogo com o JOptionPane;
 /// Aula1
 
 import javax.swing.JOptionPane;
