@@ -1,3 +1,6 @@
+/// Programa que lê a quantidade de anos, meses e dias do usuário e retorna em dias;
+/// Aula2;
+
 import java.util.Scanner;
 
 public class Exercicio1_2 {
