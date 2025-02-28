@@ -11,8 +11,8 @@ public class Exercicio3_2 {
         System.out.print(" Informe o custo de fábrica do veículo: ");
         vfabrica = entr.nextFloat();
         
-        vdist = (vfabrica + (vfabrica * 32 / 100));
-        vimposto = (vfabrica + (vfabrica * 41 / 100));
+        vdist = (vfabrica + (vfabrica * 32 / 100)); // Porcentafem do distribuidor é 32%;
+        vimposto = (vfabrica + (vfabrica * 41 / 100)); // Parcentagem de impostos é 41%;
         fazoL = (vdist + vimposto);
 
         System.out.println(" Seu carro custa: " + fazoL);
