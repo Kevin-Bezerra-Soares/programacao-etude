@@ -11,8 +11,11 @@ public class Exercicio3_2 {
         System.out.print(" Informe o custo de fábrica do veículo: ");
         vfabrica = entr.nextFloat();
         
-        float fazoL = (vfabrica * 0.32);
-               
+        vdist = (vfabrica + (vfabrica * 32 / 100));
+        vimposto = (vfabrica + (vfabrica * 41 / 100));
+        fazoL = (vdist + vimposto);
+
+        System.out.println(" Seu carro custa: " + fazoL);
         
     }
         
