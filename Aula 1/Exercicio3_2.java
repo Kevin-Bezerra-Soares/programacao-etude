@@ -5,13 +5,15 @@ import java.util.Scanner;
 
 public class Exercicio3_2 {
     public static void main (String[] args){
-        float vfabrica, vdist, vimposto;
+        float vfabrica, vdist, vimposto, fazoL;
         Scanner entr = new Scanner(System.in);
 
         System.out.print(" Informe o custo de fábrica do veículo: ");
         vfabrica = entr.nextFloat();
-
         
-
+        float fazoL = (vfabrica * 0.32);
+               
+        
     }
+        
 }
