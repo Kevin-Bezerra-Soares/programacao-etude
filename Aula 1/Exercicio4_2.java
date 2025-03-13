@@ -1,3 +1,6 @@
+// Programa que calcula seu peso ideal depesndendo se for homem ou mulher;
+// Aula 2
+
 import java.util.Scanner;
 
 public class Exercicio4_2 {
