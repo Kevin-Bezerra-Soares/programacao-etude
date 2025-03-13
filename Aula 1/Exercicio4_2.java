@@ -29,6 +29,7 @@ public class Exercicio4_2 {
             pesoIdeal = (62.1*h) - 44.7;
             System.out.println (" Seu peso ideal é: " + pesoIdeal);
         }
+       
 
     }
     

@@ -26,7 +26,7 @@ public class Exercicio5_2 {
         if (idade < 16) {
             System.out.println(" Você não vota! ");
         }
-        System.exit(0);
+        
 
     }
     
