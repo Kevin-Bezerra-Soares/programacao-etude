@@ -1,3 +1,6 @@
+// Um programa que lê a quantidade de computadores da empresa e diz se é par ou impar;
+// Aula 2;
+
 import java.util.Scanner;
 
 public class Exercicio6_2 {
