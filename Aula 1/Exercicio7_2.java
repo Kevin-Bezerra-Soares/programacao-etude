@@ -20,6 +20,7 @@ public class Exercicio7_2 {
         }
         //CProcessBuilder pb = new ProcessBuilder("clear"); pb.inheritIO(); // Redireciona a saída para o terminal pb.start();
         //new ProcessBuilder("clear").inheritIO().start().waitFor();
+        
 
     }
 }
