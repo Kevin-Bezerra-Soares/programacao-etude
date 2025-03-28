@@ -17,15 +17,15 @@ public class notaConceito {
 			return 'D';
 		}
 		if (nota >= 5.0 && nota <= 6.9){
-			System.out.println(" Conceito: C ");
+			return 'C';
 		}
 		if (nota >= 7.0 && nota <= 8.9){
-			System.out.println(" Conceito: B ");
+			return 'B';
 		}
 		if (nota >= 9.0){
-			System.out.println(" Parabéns, conceito: A ");
+			return 'A';
 		}
 			
-		
+		return 'F';
 	}
 }
