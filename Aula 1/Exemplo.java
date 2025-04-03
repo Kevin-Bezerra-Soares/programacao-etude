@@ -16,5 +16,7 @@ public class Exemplo {
 
         soma = numero1 + numero2;
         System.out.println (" Total da soma: "+ soma);
+
+        entrada.close();
     }
 }
