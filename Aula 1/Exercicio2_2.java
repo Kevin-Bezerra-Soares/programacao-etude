@@ -17,6 +17,7 @@ public class Exercicio2_2 {
 
         System.out.println(" A área do terreno é: " + area);
 
+        ent.close();
 
     }
     

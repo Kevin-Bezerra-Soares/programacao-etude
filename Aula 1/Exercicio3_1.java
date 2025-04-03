@@ -14,6 +14,6 @@ public class Exercicio3_1 {
         soma = numero + 100;
         System.out.println (" O resultado da soma é: "+ soma);
 
-
+        entrada.close();
     }
 }
