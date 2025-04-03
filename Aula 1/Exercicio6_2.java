@@ -19,6 +19,6 @@ public class Exercicio6_2 {
         else {
             System.out.println(" A quantidade de computadores é impar! ");
         }
-
+        entrada.close();
     }
 }
