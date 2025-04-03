@@ -4,17 +4,21 @@ public class Exrcicio1_3 {
     public static void main(String[] args) {
         
         int [] num;
-        num = new int [20];
+        num = new int [6];
         int i;
         Scanner sc = new Scanner(System.in);
 
-        for (i=0; i<20; i++){
+        for (i=0; i<=5; i++){
 
             System.out.println(" Digite este caraio de número: ");
             num [i] = sc.nextInt();
 
         }
 
-        sc.close();
+        for (i=5;i>=0; i--){
+
+            System.out.println("\n|"+num[i]);
+        }
+        
     }
 }
