@@ -13,5 +13,6 @@ public class Exercicio5_1 {
 
         System.out.println(" A quantidade de dias vividos é:" + (idade * 365));
 
+        sc.close();
     }
 }

@@ -16,6 +16,7 @@ public class Exercicio4_1 {
 
         System.out.println(" O resultado da mutiplicação é: " + (numero1*numero2));
 
+        sc.close();
 
     }
 }

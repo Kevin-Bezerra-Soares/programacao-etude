@@ -17,6 +17,7 @@ public class Exercicio3_2 {
 
         System.out.println(" Seu carro custa: " + fazoL);
         
+        entr.close();
     }
         
 }
