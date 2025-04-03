@@ -1,19 +1,23 @@
-
+// Aula 2 
 
 public class Exercicio8_2 {
     
     public static void main (String args []){
 
-        int i=1;
+        int i=0,som=0;
 
-        while (i<99){
+
+        while (i<=100){
             if (i%2 == 0){
-                System.out.printf("|"+i);
+
+                som += i;
+                
             }
-            System.out.printf("|\n");
+            
             i++;
         }
 
+        System.out.printf("\n"+som+"\n");
     }
     
 }
