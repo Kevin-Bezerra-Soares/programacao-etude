@@ -20,6 +20,8 @@ public class Exercicio2_1 {
         soma = ((num1 + num2 + num3) / 3);
         System.out.println (" A média aritmética é: "+ soma);
 
+        entrada.close();
+
     }
     
 }

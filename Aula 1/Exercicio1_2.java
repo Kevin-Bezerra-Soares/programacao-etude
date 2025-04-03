@@ -22,6 +22,7 @@ public class Exercicio1_2 {
         
         System.out.println(" Sua idade em dias é: " + resp);
 
+        val.close();
 
     }
 
