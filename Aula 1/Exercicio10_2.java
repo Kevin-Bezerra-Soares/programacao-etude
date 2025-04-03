@@ -15,6 +15,7 @@ public class Exercicio10_2 {
             }
         }
         System.out.println(" Quantidade de negativos: "+cont);
+        entrada.close();
 
     }
     
