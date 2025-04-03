@@ -15,6 +15,6 @@ public class Exrcicio1_3 {
 
         }
 
-
+        sc.close();
     }
 }
