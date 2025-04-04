@@ -19,7 +19,7 @@ public class Exercicio1_3 {
 
             System.out.println("\n|"+num[i]);
         }
-        
+        sc.close();
         
     }
 }
