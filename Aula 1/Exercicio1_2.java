@@ -13,7 +13,7 @@ public class Exercicio1_2 {
         anos = val.nextInt();
 
         System.out.print (" Informe quantos meses além da idade: ");
-        meses = val.nextInt();
+        meses = val.nextInt(); 
 
         System.out.print (" Informa quantos dias além dos anos e meses.");
         dias = val.nextInt();
