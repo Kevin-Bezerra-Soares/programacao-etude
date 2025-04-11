@@ -11,9 +11,8 @@ public class Exercicio3_3 {
 
             System.out.println("Digite um número: ");
             vet [i] = sc.nextInt();
-
         }
-
+        // percorrer todas
 
     }
 }
