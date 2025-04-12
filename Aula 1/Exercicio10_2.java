@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Exercicio10_2 {
 
     public static void main(String[] args) {
+        clear.limpar();
+        
         int num,cont=0;
         Scanner entrada = new Scanner(System.in);
 
