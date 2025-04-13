@@ -1,4 +1,4 @@
-#!/usr/bin/python3.11
+#!/usr/bin/python3.13
 import clear
 clear
 # Faça um programa que exiba seu nome na tela
