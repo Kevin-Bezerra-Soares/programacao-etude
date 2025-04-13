@@ -1,3 +1,5 @@
+// Classe para limpar a tela do terminal nos códigos
+
 import java.io.IOException;
 
 public class clear {
