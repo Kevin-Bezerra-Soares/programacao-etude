@@ -22,6 +22,6 @@ while (test != raiz):
     candidato +=1
 
     if (test > raiz):
-        print(" A raíz é irracional, paciência! ")
+        print(" \nA raíz é irracional, paciência! ")
         break
   
