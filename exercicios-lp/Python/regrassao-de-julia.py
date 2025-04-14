@@ -15,8 +15,13 @@ while (test != raiz):
     
     test = w2 + w + candidato
     if (test == raiz):
-        print(" A raiz é:",candidato,i)
+        print(" A raiz é:",candidato)
+
     w2 = test
     w = candidato
     candidato +=1
+
+    if (test > raiz):
+        print(" A raíz é irracional, paciência! ")
+        break
   
