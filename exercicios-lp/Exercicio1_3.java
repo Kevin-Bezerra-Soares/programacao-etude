@@ -18,8 +18,8 @@ public class Exercicio1_3 {
         for (i=5;i>=0; i--){
 
             System.out.println("\n|"+num[i]);
+            
         }
-        sc.close();
         
     }
 }
