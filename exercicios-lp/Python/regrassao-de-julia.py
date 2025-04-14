@@ -9,13 +9,14 @@ w = int(input(" Chute um candidato para essa raiz: "))
 candidato = w + 1
 w2 = w * w
 test = 0
-# candidato: w2 + w + candidato
+
 
 while (test != raiz):
     
     test = w2 + w + candidato
     if (test == raiz):
-        print(" A raiz é:",candidato)
+        print(" A raiz é:",candidato,i)
     w2 = test
     w = candidato
     candidato +=1
+  
