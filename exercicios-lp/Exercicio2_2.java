@@ -1,4 +1,9 @@
-// Ler dimensõs de um terreno e calcular área;
+// A imobiliária IMOV vende apenas terrenos
+// retangulares. Faça um programa em Java para ler
+// as dimensões de um terreno e depois exibir a área
+// do mesmo. Para calcular a área de um retângulo
+// use a fórmula: área = b * h
+
 // Aula2;
 import java.util.Scanner;
 

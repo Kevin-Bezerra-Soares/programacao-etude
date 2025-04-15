@@ -1,4 +1,7 @@
-/// Programa que lê a indade e informa a quantidade de dis vividos; 
+/// Crie um algoritmo para ler um valor que representa
+/// a idade de uma pessoa. Imprima o total de dias
+/// vividos. Obs: considere que um ano tem 365 dias.
+
 /// Aula 1
 
 import java.util.Scanner;

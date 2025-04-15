@@ -1,4 +1,6 @@
-// Aula 2 
+// Criar um programa usando a estrutura while para
+// ler 100 números inteiros e somar apenas os
+// números pares. Ao final mostrar o total da soma.
 
 public class Exercicio8_2 {
     

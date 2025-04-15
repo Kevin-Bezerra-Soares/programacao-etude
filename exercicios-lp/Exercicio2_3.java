@@ -1,3 +1,7 @@
+// Crie um programa em Java para ler e armazenar 15
+// números inteiros em um vetor e montar outro vetor com
+// os valores do primeiro multiplicados por 3.
+
 import java.util.Scanner;
 
 public class Exercicio2_3 {

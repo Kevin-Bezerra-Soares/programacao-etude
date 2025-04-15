@@ -1,4 +1,11 @@
-// Um programa que lê a quantidade de computadores da empresa e diz se é par ou impar;
+// Crie um programa para ler um número como
+// sendo a quantidade de computadores gerenciados
+// por uma empresa. Verificar se o número
+// (quantidade) de computadores é par ou ímpar.
+// Obs: para o número ser par, o resto de sua divisão
+// por dois deve ser igual a zero. Usar o operador %.
+// ex: resto = N%2
+
 // Aula 2;
 
 import java.util.Scanner;

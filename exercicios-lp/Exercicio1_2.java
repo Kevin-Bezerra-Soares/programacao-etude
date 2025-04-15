@@ -1,5 +1,11 @@
-/// Programa que lê a quantidade de anos, meses e dias do usuário e retorna em dias;
-/// Aula2;
+
+/// Faça um programa em linguagem Java para ler a
+/// idade de uma pessoa expressa em anos, meses e
+/// dias e imprime essa idade apenas em dias. Dessa
+/// forma, será necessário realizar a leitura de 3
+/// valores inteiros. Obs: Para efetuar o cálculo
+/// considere que 1 ano tem 365 dias, e 1 mês tem
+/// 30 dias.
 
 import java.util.Scanner;
 

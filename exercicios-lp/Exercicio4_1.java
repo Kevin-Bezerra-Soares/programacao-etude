@@ -1,4 +1,7 @@
-/// Programa que faz a multiplicação de 2 números;
+/// Crie um algoritmo para efetuar o produto
+/// (multiplicação) de dois números e mostrar o
+/// resultado logo em seguida.
+
 ///  Aula 1
 
 import java.util.Scanner;

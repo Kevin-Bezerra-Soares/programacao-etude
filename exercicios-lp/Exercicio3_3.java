@@ -1,3 +1,7 @@
+// Crie um programa, usando o conceito de vetores, para
+// ler e armazenar um conjunto de 50 números inteiros.
+// Encontrar e exibir o maior número.
+
 import java.util.Scanner;
 
 public class Exercicio3_3 {

@@ -1,4 +1,7 @@
-// Programa que calcula o aumento de 10%
+// Crie um algoritmo para ler o salário de uma pessoa. 
+// Calcule e imprima o valor de 10% de aumento que 
+// essa pessoa irá receber.
+
 /// A emtrada e saída são por caixa de diálogo com o JOptionPane;
 /// Aula1
 

@@ -1,3 +1,8 @@
+// Escreva um programa para armazenar 50 números
+// inteiros em um vetor. Ao final mostrar apenas os
+// números positivos contidos no vetor.
+
+
 import java.util.Scanner;
 
 public class Exercicio5_3 {

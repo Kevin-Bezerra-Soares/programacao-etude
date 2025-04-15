@@ -1,3 +1,9 @@
+// Escrever um programa (usando a estrutura for)
+// para ler 20 valores, um de cada vez, para a variável
+// X. Contar quantos destes valores são negativos,
+// mostrando os mesmos e escrevendo esta a
+// quantidade ao final
+
 import java.util.Scanner;
 
 public class Exercicio10_2 {

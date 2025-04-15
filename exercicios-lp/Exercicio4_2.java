@@ -1,4 +1,12 @@
-// Programa que calcula seu peso ideal depesndendo se for homem ou mulher;
+// Crie um programa em Java que tendo como dados
+// de entrada a altura (h) e o sexo de uma pessoa (1
+// - Masculino e 2 - Feminino), calcular seu peso
+// ideal, utilizando as seguintes fórmulas:
+// – Para masculino
+// PesoIdeal = (72.7*h) – 58;
+// – Para feminino
+// PesoIdeal = (62.1*h) – 44.7;
+
 // Aula 2
 
 import java.util.Scanner;

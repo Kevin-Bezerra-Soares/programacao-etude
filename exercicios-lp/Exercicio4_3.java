@@ -1,3 +1,7 @@
+// Faça um programa para ler e armazenar 100 números
+// inteiros em um vetor. Calcular a soma dos elementos
+// (números) que estão nos índices ímpares do vetor.
+
 import java.util.Scanner;
 
 public class Exercicio4_3 {

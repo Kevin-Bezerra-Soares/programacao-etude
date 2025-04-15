@@ -1,4 +1,14 @@
-// O programa lê o custo de fábrica de um automóvel e retorna a soma da porcentagem do distribuidor e impostos;
+// Considere a descrição a seguir:
+// “O custo de um carro novo para o consumidor é a
+// soma do custo de fábrica com a percentagem do
+// distribuidor (em cima do custo de fábrica) e dos
+// impostos (também aplicados ao custo de fábrica)”.
+// Supondo que a percentagem do distribuidor
+// seja de 32% e os impostos de 41%, escrever um
+// programa em linguagem Java para ler o custo de
+// fábrica de um carro e imprimir o custo ao
+// consumidor.
+
 // Aula 2;
 
 import java.util.Scanner;

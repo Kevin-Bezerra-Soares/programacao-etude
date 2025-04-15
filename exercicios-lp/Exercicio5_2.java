@@ -1,4 +1,14 @@
-// Um programa que decide, com base na idade, se o voto da pessoa é obrigatório, opcional ou se não vota;
+// Nesse ano ocorrerão as eleições para prefeitos,
+// vices e vereadores. De acordo com o Tribunal
+// Superior Eleitoral é considerada a idade da pessoa
+// para que seja verificada a situação da pessoa, ou
+// seja, se a mesma pode votar, ou se o seu voto é
+// opcional, ou se a pessoa não pode votar. 
+// Considerando a necessidade de verificar a situação
+// de uma pessoa, crie um programa em Java que
+// dada a idade de uma pessoa, determine sua
+// condição de Eleitor.
+
 // Aula2;
 
 

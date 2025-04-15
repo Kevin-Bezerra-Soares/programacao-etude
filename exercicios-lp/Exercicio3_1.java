@@ -1,4 +1,7 @@
-/// Programa que soma 100 a qualquer número;
+/// Crie um algoritmo para calcular a soma de um
+/// número com o valor 100. Mostrar o total da soma
+/// ao final.
+
 /// Aula 1
 
 import java.util.Scanner;

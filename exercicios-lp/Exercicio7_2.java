@@ -1,3 +1,6 @@
+// Criar um programa usando a estrutura while para
+// imprimir os 100 primeiros múltiplos de 13.
+
 public class Exercicio7_2 {
 
     public static void main(String[] args) {
