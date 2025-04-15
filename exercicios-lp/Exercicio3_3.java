@@ -6,10 +6,10 @@ public class Exercicio3_3 {
         clear.limpar();
         Scanner sc = new Scanner(System.in);
         int vet [],i;
-        vet = new int [5];
+        vet = new int [50];
         int maior = vet[0];
 
-        for (i=0; i<5; i++){
+        for (i=0; i<50; i++){
 
             System.out.println("Digite um número: ");
             vet [i] = sc.nextInt();
