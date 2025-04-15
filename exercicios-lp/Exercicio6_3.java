@@ -10,23 +10,23 @@ import java.util.Scanner;
 public class Exercicio6_3 {
     public static void main(String[] args) {
         clear.limpar();
-        int A[], B[], i,j, aux;
-        A = new int[20];
-        B = new int[20];
+        int A[], B[], i,j, aux, total = 20;
+        A = new int[total];
+        B = new int[total];
         Scanner sc = new Scanner(System.in);
 
-        for (i=0; i<20; i++){
+        for (i=0; i<total; i++){
             System.out.println(" Informe um valor para o vetor A: ");
             A[i] = sc.nextInt();
         }
-        
-        for (i=0; i<20; i++){
+
+        for (i=0; i<total; i++){
             System.out.println(" Informe um valor para o vetor B: ");
             B[i] = sc.nextInt();
         }
 
         j = 20;
-        for (i=0; i<20; i++){
+        for (i=0; i<total; i++){
             aux = A[i];
             A[i] = B[j];
             B[j] = aux;
