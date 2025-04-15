@@ -17,7 +17,7 @@ public class Exercicio3_3 {
                 maior = vet[i];
             }
         }
-        System.out.println(" O maio número é:" + maior);
+        System.out.println(" O maio número é:" + maior + " " + i);
         
 
     }
