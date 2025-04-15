@@ -19,7 +19,7 @@ public class Exercicio6_3 {
             System.out.println(" Informe um valor para o vetor A: ");
             A[i] = sc.nextInt();
         }
-        i = 0;
+        
         for (i=0; i<20; i++){
             System.out.println(" Informe um valor para o vetor B: ");
             B[i] = sc.nextInt();
