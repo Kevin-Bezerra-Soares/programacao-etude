@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Exercicio4_1 {
     public static void main (String args[]){
+        clear.limpar();
         int numero1, numero2;
         Scanner sc = new Scanner(System.in);
 

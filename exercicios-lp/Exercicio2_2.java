@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Exercicio2_2 {
     public static void main(String[]argis){
+        clear.limpar();
+        
         float area, largura, profundidade;
         Scanner ent = new Scanner(System.in);
 

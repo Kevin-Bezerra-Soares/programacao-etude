@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Exercicio3_2 {
     public static void main (String[] args){
+        clear.limpar();
         float vfabrica, vdist, vimposto, fazoL;
         Scanner entr = new Scanner(System.in);
 

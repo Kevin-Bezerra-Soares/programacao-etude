@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Exercicio2_1 {
     public static void main (String[] args) {
+        clear.limpar();
+        
         int num1, num2, num3, soma;
         Scanner entrada = new Scanner(System.in);
 

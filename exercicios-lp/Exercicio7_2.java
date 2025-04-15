@@ -1,14 +1,11 @@
-import java.io.IOException;
-
 public class Exercicio7_2 {
 
     public static void main(String[] args) {
         int cont = 1, mtp;
-
+        clear.limpar();
         
         while (cont <= 100) {
-            //Clear.limparTela();
-            
+                        
             mtp = cont % 13;
             
             if (mtp == 0){
@@ -18,9 +15,6 @@ public class Exercicio7_2 {
             
 
         }
-        //CProcessBuilder pb = new ProcessBuilder("clear"); pb.inheritIO(); // Redireciona a saída para o terminal pb.start();
-        //new ProcessBuilder("clear").inheritIO().start().waitFor();
         
-
     }
 }

@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Exercicio4_2 {
 
     public static void main (String args[]){
+        clear.limpar();
         
         double h, pesoIdeal;
         int opt;

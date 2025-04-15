@@ -1,6 +1,7 @@
 
 public class Exercicio9_2 {
     public static void main(String[] args) {
+        clear.limpar();
         Double tree1=1.50, tree2=1.10;
         int ano=0;
 

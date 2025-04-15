@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Exercicio5_1 {
     public static void main (String args[]){
+        clear.limpar();
         int idade;
         Scanner sc = new Scanner(System.in);
 

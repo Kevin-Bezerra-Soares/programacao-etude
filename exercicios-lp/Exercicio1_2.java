@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Exercicio1_2 {
     public static void main(String[] args) {
+        clear.limpar();
         int anos, meses, dias, resp;
         
         Scanner val = new Scanner(System.in);

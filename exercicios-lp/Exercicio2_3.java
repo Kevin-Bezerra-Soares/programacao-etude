@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Exercicio2_3 {
 
     public static void main(String[] args) {
+        clear.limpar();
 
         int vet1 [], vet2 [],i;
         vet1 = new int [5];
