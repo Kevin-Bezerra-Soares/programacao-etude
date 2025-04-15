@@ -25,7 +25,7 @@ public class Exercicio6_3 {
             B[i] = sc.nextInt();
         }
 
-        j = 20;
+        j = 19;
         for (i=0; i<total; i++){
             aux = A[i];
             A[i] = B[j];
