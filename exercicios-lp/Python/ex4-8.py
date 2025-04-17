@@ -6,7 +6,7 @@ clear
 
 plano = input("\n Qual é o seu plano de celular? ")
 
-if (plano == "falapouco" or plano == "falamuito"):
+if (plano == "folapouco" or plano == "folamuito"):
 
     if (plano == "falapouco"):
 
