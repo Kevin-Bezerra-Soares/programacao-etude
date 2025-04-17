@@ -15,3 +15,5 @@ if (velocidade > 80):
     multa = km * 5
 
     print (f" Você ultrapassou o limite de velocidade, foi multado em R${multa}.")
+
+print (" Está dentro da velocidade. ")
