@@ -21,4 +21,4 @@ while (i <= 24):
     print (f" Mês:{i}  Valor:{deposito:20.2f}")
     i += 1
 
-print (f"\n Total da ganhos {ganho}.")
+print (f"\n Total da ganhos {ganho:20.2f}.")
