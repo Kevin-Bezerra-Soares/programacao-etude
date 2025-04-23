@@ -22,4 +22,4 @@ while (i <= 24):
     deposito += float(input(" Digite o valor que quer depositar neste mês: "))
     i += 1
 
-print (f"\n Total da ganhos {ganho:20.2f}.")
+print (f"\n Total da ganhos {ganho:.2f}.")
