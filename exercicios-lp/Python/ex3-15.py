@@ -10,7 +10,7 @@ clear
 cigarros = int(input(" Quantos cigarros você fuma por dia? "))
 anos = int(input(" Há quantos anos você fuma? "))
 
-minutos = cigarros * 10
+minutos = cigarros * 22
 dias = minutos / 60 / 24 * anos * 365
 
 print(" Você perdeu %.2f " % dias)
