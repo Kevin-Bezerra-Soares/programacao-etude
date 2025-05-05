@@ -16,6 +16,7 @@ while (test != raiz):
     test = w2 + w + candidato
     if (test == raiz):
         print(" A raiz é:",candidato)
+        break
     
     print(i)
     i +=1
