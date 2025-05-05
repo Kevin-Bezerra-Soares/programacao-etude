@@ -38,6 +38,7 @@ public class Exercicio2_4 {
             }
             System.out.println(" ");
         }
+
     }
     
 } 
