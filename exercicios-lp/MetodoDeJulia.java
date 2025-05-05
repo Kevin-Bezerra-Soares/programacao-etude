@@ -34,10 +34,8 @@ public class MetodoDeJulia {
       palpite = candidato;
       candidato += 1;
 
-      
-
     }
-
+    entrada.close();
     
   }
 
