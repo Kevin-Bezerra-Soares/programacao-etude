@@ -7,3 +7,4 @@ clear
 # Imprima a tabuada da operação escolhida.
 print ("\t [1]: adição +;\n\t [2]: subtrção -;\n\t [3]: multiplicação *;\n\t [4]: divisão /; ")
 opt = input("\n Digite a operação aritimética da tabuada: \n") 
+
