@@ -11,7 +11,8 @@ public class Exercicio6_4 {
         clear.limpar();
         Scanner entrada = new Scanner(System.in);
 
-        int matriz[][], i, j, teste=0;
+        int matriz[][], i, j;
+        boolean teste=true;
         matriz = new int[3][3];
 
         for (i=0;i<3;i++){
@@ -31,16 +32,16 @@ public class Exercicio6_4 {
         
         for (i=0;i<3;i++){
             for (j=0;j<3;j++){
-                if (i==j && matriz[i][j]==1){
-                    teste++;
+                if (i==j && matriz[i][j]!=1){
+                    teste=false;
     
-                } else if (matriz[i][j]==0){
-                    teste++;
+                } else if (i!=j && matriz[i][j]!=0){
+                    teste=false;
                 }
             }
         }
 
-        if (teste == 9){
+        if (teste){
             System.out.println("\n É matriz identidade! ");
 
         } else {
