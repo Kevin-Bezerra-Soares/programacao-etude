@@ -24,8 +24,9 @@ public class Exercicio4_4 {
         for (i = 0; i < 5; i++) {
             for (j = 0; j < 5; j++) {
                 System.out.print(matriz[i][j] + "\t|");
-            }
-            System.out.println();
+            } 
+
+            System.out.println(" ");
         }
 
         System.out.println("\n Diagonal principal: ");
