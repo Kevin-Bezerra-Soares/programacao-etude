@@ -2,7 +2,7 @@
 import clear
 clear
 
-# Programa 5.1: Contagem de cédulas
+# Modifique o programa 5.1 para também trabalhar com notas de R$ 100.
 
 valor = int(input("\n Digite o valor a pagar: "))
 cédulas = 0 
