@@ -6,7 +6,7 @@ clear
 
 valor = float(input("\n Digite o valor a pagar: "))
 cédulas = 0
-atual = 50.0
+atual = 100.0
 aPagar = valor
 
 while (True):
@@ -56,8 +56,12 @@ while (True):
 
             atual = 0.05
 
+        elif (atual == 0.05):
+
+            atual = 0.02
+
         elif (atual == 0.02):
 
             atual = 0.01
 
-        cédulas = 0.00
+        
