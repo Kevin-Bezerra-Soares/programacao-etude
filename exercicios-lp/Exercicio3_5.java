@@ -11,7 +11,7 @@ public class Exercicio3_5 {
         char frase, letra = 'a';
         int i, cont=0;
         
-        System.out.println("\n Digite alguma coisa: ");
+        System.out.println("\n Digite alguma coisa: \n");
         StringBuffer str = new StringBuffer(input.nextLine());
 
         for (i=0; i < str.length(); i++){
@@ -21,7 +21,7 @@ public class Exercicio3_5 {
                 cont++;
             }
         }
-        System.out.println(str+"\n Quantidade de caracteres substituídos: "+cont);
+        System.out.println(str+"\n\n Quantidade de caracteres substituídos: "+cont);
         input.close();
     }
 }
