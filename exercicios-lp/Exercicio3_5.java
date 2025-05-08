@@ -22,5 +22,6 @@ public class Exercicio3_5 {
             }
         }
         System.out.println(str+"\n Quantidade de caracteres substituídos: "+cont);
+        input.close();
     }
 }
