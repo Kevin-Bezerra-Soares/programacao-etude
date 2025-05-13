@@ -20,7 +20,7 @@ elif(número%2 != 0):
         if (número%i == 0):
             primo = False
             i += 2
-            print(i)
+    
         else:
             i += 2
             print(i)
