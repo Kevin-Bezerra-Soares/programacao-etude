@@ -17,6 +17,7 @@ public class Exercicio2_8 {
 
         clear.limpar();
         calcularSoma(a,b);
+        input.close();
         
     }
 

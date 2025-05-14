@@ -25,6 +25,7 @@ public class Histograma {
             }
 
             System.out.println("(" + cont + ")");
+            input.close();
         }
     }
 }

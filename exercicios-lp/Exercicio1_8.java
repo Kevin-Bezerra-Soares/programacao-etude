@@ -13,6 +13,7 @@ public class Exercicio1_8 {
         Double n = input.nextDouble();
 
         verificarValor(n);
+        input.close();
         
     }
 
