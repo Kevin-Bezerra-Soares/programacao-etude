@@ -22,9 +22,9 @@ elif(número%2 != 0):
             i += 2
     
         else:
+            print (i)
             i += 2
-            print(i)
-
+            
 else: 
     print (f"\n O número {número} não é primo.")
     primo = False
