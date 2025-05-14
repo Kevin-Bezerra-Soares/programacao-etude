@@ -5,17 +5,18 @@
 
 import java.util.Scanner;
 
-public class notaConceito {
+public class Exercicio5_8 {
     public static void main (String args []){
-		//clear;limpar();
+		clear.limpar();
         Scanner entrada = new Scanner(System.in);
         Double nota;
 		char conceito;
-        System.out.print(" Digite a nota do aluno: ");
+        System.out.println(" Digite a nota do aluno: ");
 		nota = entrada.nextDouble();
 		
 		conceito = emitirConceito(nota);
 		System.out.println("\n Conceito: "+ conceito);
+        entrada.close();
 
     }
 	
@@ -35,4 +36,7 @@ public class notaConceito {
 			
 		return 'F';
 	}
+    
 }
+
+
