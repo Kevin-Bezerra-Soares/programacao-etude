@@ -24,7 +24,7 @@ public class Exercicio5_3 {
                 System.out.println(" Os valores positivos são:" + vet[i]);
             }
         }
-
+        sc.close();
     }
 
 }

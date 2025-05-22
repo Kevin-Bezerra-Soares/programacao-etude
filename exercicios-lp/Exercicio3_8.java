@@ -16,6 +16,7 @@ public class Exercicio3_8 {
         parametro = input.next();
         Double result = calcularMedia(nota1,nota2,parametro);
         System.out.println("\n A média é: "+ result);
+        input.close();
 
     }
 

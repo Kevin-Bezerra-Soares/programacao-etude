@@ -23,6 +23,6 @@ public class Exercicio3_3 {
         }
         System.out.println(" O maio número é:" + maior + " " + i);
         
-
+        sc.close();
     }
 }

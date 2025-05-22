@@ -40,5 +40,6 @@ public class Exercicio6_3 {
             System.out.println(" Valores do vetor B: " + B[i]);
         }
         
+        sc.close();
     }
 }

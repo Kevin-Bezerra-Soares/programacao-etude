@@ -32,6 +32,6 @@ public class Exercicio7_3 {
         }
 
 
-
+        sc.close();
     }
 }

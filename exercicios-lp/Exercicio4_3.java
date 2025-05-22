@@ -24,7 +24,7 @@ public class Exercicio4_3 {
             }
         }
         System.out.println(" A soma nos índices pares e ímpares são: " + par + " e " + impar + " respectivamente");
-
+        sc.close();
     }
     
 }

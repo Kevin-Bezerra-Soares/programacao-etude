@@ -16,6 +16,7 @@ public class Exercicio4_8 {
         System.out.println("\n Informe o valor em segundos: ");
         segundos = input.nextDouble();
         verificarTempo(segundos);
+        input.close();
         
     }
 
