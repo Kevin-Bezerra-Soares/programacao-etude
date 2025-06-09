@@ -18,6 +18,7 @@ public class Exercicio8_9 {
         }
 
         imprimePos(Num);
+        input.close();
     }
 
     public static void imprimePos(int Num[]) {
