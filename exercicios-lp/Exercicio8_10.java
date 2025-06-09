@@ -43,7 +43,7 @@ public class Exercicio8_10 {
     }
 
     public static int maiorValor(int Valores[]){
-        int maior =0,i;
+        int maior=0,i;
 
         for (i=0; i<50; i++){
             if (Valores[i] > maior){
