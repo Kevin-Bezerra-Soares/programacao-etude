@@ -19,6 +19,7 @@ public class Exercicio8_8 {
         N = input.nextInt();
 
         mostrarTabuadas(N);
+        input.close();
         
     }
 
