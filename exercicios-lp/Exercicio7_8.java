@@ -1,3 +1,8 @@
+//  Faça um programa que contenha um método
+// chamado lerVetor. Dentro do método permita a
+// leitura de 10 valores inteiros, armazene-os em um
+// vetor, e imprime o maior e o menor deles
+
 import java.util.Scanner;
 
 public class Exercicio7_8 {
@@ -13,6 +18,7 @@ public class Exercicio7_8 {
         }
 
         lerVetor(vet);
+        input.close();
 
     }
 
@@ -38,5 +44,6 @@ public class Exercicio7_8 {
             }
         }
         System.out.println(" O menor número é:" + menor);
+        
     }
 }
