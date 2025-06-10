@@ -6,14 +6,14 @@
 //  - retorna o total da soma para a função principal a fim de
 // imprimir esse total.
 
-//import java.util.Scanner;
+
 import java.util.Random;
 
 public class Exercicio8_11 {
 
     public static void main(String[] args) {
         clear.limpar();
-        //Scanner input = new Scanner(System.in); 
+
         Random rand = new Random();
         int Numeros [] = new int [100];
 
