@@ -1,3 +1,6 @@
+package introducao_OO;
+
+
 public class Produto{
     public int codProd;
     public String descricaoProd;

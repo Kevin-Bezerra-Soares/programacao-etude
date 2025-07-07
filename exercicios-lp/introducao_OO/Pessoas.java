@@ -1,3 +1,6 @@
+package introducao_OO;
+
+
 public class Pessoas{
     int id;
     String nome,endereco;

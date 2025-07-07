@@ -1,3 +1,6 @@
+package introducao_OO;
+
+
 import java.util.Scanner;
 
 public class TestaPaciente{
@@ -20,6 +23,7 @@ public class TestaPaciente{
 
             Menu();
         }
+        
     }
 
     public static void Menu(){
