@@ -18,7 +18,7 @@ public class notaConceito {
 		System.out.println("\n Conceito: "+ conceito);
 
     }
-	
+
 	public static char emitirConceito(Double nota){
 		if (nota >= 0.0 && nota <= 4.9){
 			return 'D';

@@ -3,34 +3,100 @@ package alura_projeto;
 import java.util.Random;
 
 public class character {
-    String name;
-    int life;
-    int xp;
-    int atk;
-    int mana;
-    String specialPower;
-    int spPwManaCost;
-    String gender;
-    String type;
-    boolean live;
+    private String name;
+    private int life;
+    private int xp;
+    private int atk;
+    private int mana;
+    private String specialPower;
+    private int spPwManaCost;
+    private String gender;
+    private String type;
+    private boolean live;
     
     
 
-    void character(String name, int life, int xp, int atk, int mana, String specialPower, int spPwManaCost,
-            String gender, String type, boolean live) {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
+    }
+
+    public int getLife() {
+        return life;
+    }
+
+    public void setLife(int life) {
         this.life = life;
+    }
+
+    public int getXp() {
+        return xp;
+    }
+
+    public void setXp(int xp) {
         this.xp = xp;
+    }
+
+    public int getAtk() {
+        return atk;
+    }
+
+    public void setAtk(int atk) {
         this.atk = atk;
+    }
+
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
         this.mana = mana;
+    }
+
+    public String getSpecialPower() {
+        return specialPower;
+    }
+
+    public void setSpecialPower(String specialPower) {
         this.specialPower = specialPower;
+    }
+
+    public int getSpPwManaCost() {
+        return spPwManaCost;
+    }
+
+    public void setSpPwManaCost(int spPwManaCost) {
         this.spPwManaCost = spPwManaCost;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
         this.type = type;
+    }
+
+    public boolean isLive() {
+        return live;
+    }
+
+    public void setLive(boolean live) {
         this.live = live;
     }
 
-   void showStatus(){
+    public void showStatus(){
         System.out.println("\n Personagem: "+ name);
         System.out.println(" Vida: "+ life);
         System.out.println(" XP: "+ xp);
@@ -40,14 +106,14 @@ public class character {
         System.out.println(" Mana: "+ mana);
     }
 
-    int rollDie(){
+    public int rollDie(){
         Random die = new Random();
         int range5die = 1 + die.nextInt(10);
-        int damage = this.atk + range5die;
+        int damage = atk + range5die;
         return damage;
     }
 
-    void attack(character enemy, String specialPower,int spPwManaCost){ 
+    public void attack(character enemy, String specialPower,int spPwManaCost){ 
         if (enemy.live){
 
             if (specialPower.length() == 0){
@@ -79,7 +145,8 @@ public class character {
             System.out.println("\n Você já matou esse cara, não vai conseguir mais XP inssistindo!");
         }
     }
-    void attacked(character enemy){
+
+    public void attacked(character enemy){
 
         if (this.type == "mage" && this.mana <= 0){
             System.out.println("\n Você está sem mana, perdeu esse turno, cuidado do para não ser atacado.");

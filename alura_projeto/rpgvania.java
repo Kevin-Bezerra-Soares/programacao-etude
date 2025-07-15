@@ -1,47 +1,50 @@
 package alura_projeto;
+import java.util.Scanner;
 
 public class rpgvania {
     public static void main(String[] args) {
         clear.limpar();
 
+        Scanner input = new Scanner(System.in);
         character hero = new character();
-        //hero.name = "Kevin";
-        //hero.gender = "male";
-        //hero.life = 25;
-        //hero.atk = 2;
-        //hero.xp = 1;
-        //hero.type = "mage";
-        //hero.mana = 5;
-        //hero.specialPower = "'You shall not pass!'";
-        //hero.spPwManaCost = 4;
-        //hero.live = true;
+        hero.setName("Maga Li");
+        hero.setGender("female");
+        hero.setLife(25);
+        hero.setAtk(2);
+        hero.setXp(2);
+        hero.setType("mage");
+        hero.setMana(10);
+        hero.setSpecialPower("You shall not pass!");
+        hero.setSpPwManaCost(3);
+        hero.setLive(true);
         
 
         character zombie = new character();
-        //zombie.name = "Zumbi";
-        //zombie. life = 4;
-        //zombie.atk = 1;
-        //zombie.xp = 1;
-        //zombie.type = "zombie";
-        //zombie.live = true;
-        //zombie.specialPower = "";
-
+        zombie.setName("Zumbi");
+        zombie.setLife(4);
+        zombie.setAtk(1);
+        zombie.setXp(1);
+        zombie.setType("zombie");
+        zombie.setLive(true);
+        zombie.setSpecialPower("");
+    
         character soldierZombie = new character();
-        //soldierZombie.name = "Soldier Zumbi";
-        //soldierZombie. life = 10;
-        //soldierZombie.atk = 10;
-        //soldierZombie.xp = 5;
-        //soldierZombie.type = "zombie";
-        //soldierZombie.live = true;
-        //soldierZombie.specialPower = "";
+        soldierZombie.setName("Soldado Zumbi");
+        soldierZombie.setLife(10);
+        soldierZombie.setAtk(2);
+        soldierZombie.setXp(5);
+        soldierZombie.setType("zombie");
+        soldierZombie.setLive(true);
+        soldierZombie.setSpecialPower("");
 
         hero.showStatus();
         hero.attacked(soldierZombie);
-        hero.attack(soldierZombie,hero.specialPower,hero.spPwManaCost);
-        hero.attack(soldierZombie,hero.specialPower,hero.spPwManaCost);
-        hero.attack(soldierZombie,hero.specialPower,hero.spPwManaCost);
+        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPwManaCost());
+        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPwManaCost());
+        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPwManaCost());
         hero.showStatus();
         soldierZombie.showStatus();
 
     }
+
 }
