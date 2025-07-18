@@ -30,6 +30,32 @@ public class character {
         this.live = true;
 
     }
+
+    public character (String name){
+        this.name = name;
+
+        switch (name) {
+            case "Zumbi":
+                this.life = 4;
+                this.atk = 1;
+                this.xp = 1;
+                this.type = "zombie";
+                this.live = true;
+                this.specialPower="0";
+                break;
+            
+            case "Soldado Zumbi":
+                setLife(10);
+                this.atk = 3;
+                this.type = "zombie";
+                this.xp = 3;
+                this.live = true;
+                this.specialPower="0";
+                break;
+        }
+
+
+    }
     
     public character (int opt, String gender, String name){
         
@@ -205,7 +231,7 @@ public class character {
             System.out.println("\n Você está sem mana, perdeu esse turno, cuidado do para não ser atacado.");
         } else
         {
-            if (enemy.specialPower.length()==0){
+            if ("0".equalsIgnoreCase(enemy.specialPower)){
                 this.life -= enemy.atk;
                 System.out.println("\n"+this.name+" foi atacado pelo "+enemy.name+", tomou "+enemy.atk+" de dano! ");
 
