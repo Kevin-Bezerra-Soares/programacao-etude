@@ -6,17 +6,38 @@ public class rpgvania {
         clear.limpar();
 
         Scanner input = new Scanner(System.in);
-        character hero = new character();
-        hero.setName("Maga Li");
-        hero.setGender("female");
-        hero.setLife(25);
-        hero.setAtk(2);
-        hero.setXp(2);
-        hero.setType("mage");
-        hero.setMana(10);
-        hero.setSpecialPower("You shall not pass!");
-        hero.setSpPwManaCost(3);
-        hero.setLive(true);
+
+        System.out.println("\n Informe o nome do personagem: ");
+        String name = input.next();
+
+        System.out.println("\n Informe o tipo do personagem: ");
+        System.out.println("\n [1] - Guerreiro(a) \n [2] - Mago(a)");
+        int type = input.nextInt();
+
+        System.out.println("\n Informe o gênero do personagem: ");
+        System.out.println("\n [H] - Homem \n [M] - Mulher");
+        String gender = input.next();
+
+        if (gender.equalsIgnoreCase("h")){
+            gender = "homem";
+        } else if (gender.equalsIgnoreCase("m")){
+            gender = "mulher";
+        } else {
+            System.out.println("\n Opção indisponível! ");
+        }
+
+        character hero = new character(type,gender,name);
+
+        //hero.setName("Maga Li");
+        //hero.setGender("female");
+        //hero.setLife(25);
+        //hero.setAtk(2);
+        //hero.setXp(2);
+        //hero.setType("mage");
+        //hero.setMana(10);
+        //hero.setSpecialPower("You shall not pass!");
+        //hero.setSpPwManaCost(3);
+        //hero.setLive(true);
         
 
         character zombie = new character();
@@ -39,12 +60,13 @@ public class rpgvania {
 
         hero.showStatus();
         hero.attacked(soldierZombie);
-        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPwManaCost());
-        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPwManaCost());
-        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPwManaCost());
+        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPowerCost());
+        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPowerCost());
+        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPowerCost());
         hero.showStatus();
         soldierZombie.showStatus();
 
+        input.close();
     }
 
 }

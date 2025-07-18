@@ -1,5 +1,6 @@
 package alura_projeto;
 
+import java.util.Scanner;
 import java.util.Random;
 
 public class character {
@@ -7,14 +8,67 @@ public class character {
     private int life;
     private int xp;
     private int atk;
-    private int mana;
+    private int esforco;
     private String specialPower;
-    private int spPwManaCost;
     private String gender;
     private String type;
     private boolean live;
+    private int spPowerCost;
     
+
+    public character (){
+
+        this.name = "Maga";
+        this.gender = "female";
+        this.life = 25;
+        this.atk = 2;
+        this.xp = 2;
+        this.type = "mage";
+        this.esforco = 10;
+        this.specialPower = "You shall not pass!";
+        this.spPowerCost = 3;
+        this.live = true;
+
+    }
     
+    public character (int opt, String gender, String name){
+        
+
+        switch (opt){
+            case 1: // Guerreiro
+
+                this.type = "warrior";
+                this.gender = gender;
+                this.name = name;
+
+                this.life = 50;
+                this.atk = 5;
+                this.xp = 2;
+                this.esforco = 15;
+                this.specialPower = "faz o L";
+                this.spPowerCost = 4;
+                this.live = true;
+            break;
+
+            case 2: // Mago
+
+                this.type = "mage";
+                this.gender = gender;
+                this.name = name;
+
+                this.life = 25;
+                this.atk = 2;
+                this.xp = 2;
+                this.esforco = 10;
+                this.specialPower = "you shall not pass";
+                this.spPowerCost = 3;
+                this.live = true;
+            break;
+        }
+
+        showStatus();
+
+    }
 
     public String getName() {
         return name;
@@ -49,11 +103,11 @@ public class character {
     }
 
     public int getMana() {
-        return mana;
+        return esforco;
     }
 
     public void setMana(int mana) {
-        this.mana = mana;
+        this.esforco = mana;
     }
 
     public String getSpecialPower() {
@@ -64,12 +118,12 @@ public class character {
         this.specialPower = specialPower;
     }
 
-    public int getSpPwManaCost() {
-        return spPwManaCost;
+    public int getSpPowerCost() {
+        return spPowerCost;
     }
 
-    public void setSpPwManaCost(int spPwManaCost) {
-        this.spPwManaCost = spPwManaCost;
+    public void setSpPowerCost(int spPowerCost) {
+        this.spPowerCost = spPowerCost;
     }
 
     public String getGender() {
@@ -103,7 +157,7 @@ public class character {
         System.out.println(" Ataque: "+ atk);
         System.out.println(" Classe: "+ type);
         System.out.println(" Gênero: "+ gender);
-        System.out.println(" Mana: "+ mana);
+        System.out.println(" Mana: "+ esforco);
     }
 
     public int rollDie(){
@@ -113,12 +167,11 @@ public class character {
         return damage;
     }
 
-    public void attack(character enemy, String specialPower,int spPwManaCost){ 
+    public void attack(character enemy, String specialPower,int spPowerCost){ 
         if (enemy.live){
 
             if (specialPower.length() == 0){
                 enemy.attacked(this);
-                this.mana--;
                 if (enemy.life <= 0){
                     this.xp += enemy.xp;
                     enemy.live = false;
@@ -129,14 +182,14 @@ public class character {
                 enemy.attacked(this);
                 int damage = rollDie();
                 enemy.life -= damage;
-                this.mana -= this.spPwManaCost;
+                this.esforco -= this.spPowerCost;
                 if (enemy.life <= 0){
                     this.xp += enemy.xp;
                     enemy.live = false;
-                    System.out.format("\n %s matou o %s com o ataque especial %s.\n O dano foi de %d e custou %d de magia!",this.name, enemy.name,this.specialPower,damage,this.spPwManaCost);
+                    System.out.format("\n %s matou o %s com o ataque especial %s.\n O dano foi de %d e custou %d de magia!",this.name, enemy.name,this.specialPower,damage,this.spPowerCost);
                 } 
                 else {
-                    System.out.format("\n %s atacou o %s com o ataque especial %s.\n O dano foi de %d e custou %d de magia!",this.name, enemy.name,this.specialPower, damage,this.spPwManaCost);
+                    System.out.format("\n %s atacou o %s com o ataque especial %s.\n O dano foi de %d e custou %d de magia!",this.name, enemy.name,this.specialPower, damage,this.spPowerCost);
                 }
                 
             }
@@ -148,7 +201,7 @@ public class character {
 
     public void attacked(character enemy){
 
-        if (this.type == "mage" && this.mana <= 0){
+        if (this.type == "mage" && this.esforco <= 0){
             System.out.println("\n Você está sem mana, perdeu esse turno, cuidado do para não ser atacado.");
         } else
         {
