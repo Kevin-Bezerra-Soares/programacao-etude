@@ -3,12 +3,12 @@ package alura_projeto;
 import java.util.Scanner;
 import java.util.Random;
 
-public class character {
+public class character implements personagem {
     private String name;
     private int life;
     private int xp;
     private int atk;
-    private int esforco;
+    private int maxEffort;
     private String specialPower;
     private String gender;
     private String type;
@@ -18,16 +18,16 @@ public class character {
 
     public character (){
 
-        this.name = "Maga";
-        this.gender = "female";
-        this.life = 25;
-        this.atk = 2;
-        this.xp = 2;
-        this.type = "mage";
-        this.esforco = 10;
-        this.specialPower = "You shall not pass!";
-        this.spPowerCost = 3;
-        this.live = true;
+        this.setName("Maga");
+        this.setGender("Mulher");;
+        this.setLife(25);
+        this.setAtk(2);
+        this.setXp(2);
+        this.setType("mage");
+        this.setMaxEffort(10);
+        this.setSpecialPower("you shall not pass");
+        this.setSpPowerCost(3);
+        this.setLive(true);
 
     }
 
@@ -36,12 +36,12 @@ public class character {
 
         switch (name) {
             case "Zumbi":
-                this.life = 4;
-                this.atk = 1;
-                this.xp = 1;
-                this.type = "zombie";
-                this.live = true;
-                this.specialPower="0";
+                this.setLife(4);
+                this.setAtk(1);
+                this.setXp(1);
+                this.setType("Zumbi");
+                this.setLive(true);
+                this.setSpecialPower("0");
                 break;
             
             case "Soldado Zumbi":
@@ -70,7 +70,7 @@ public class character {
                 this.life = 50;
                 this.atk = 5;
                 this.xp = 2;
-                this.esforco = 15;
+                this.maxEffort = 15;
                 this.specialPower = "faz o L";
                 this.spPowerCost = 4;
                 this.live = true;
@@ -85,7 +85,7 @@ public class character {
                 this.life = 25;
                 this.atk = 2;
                 this.xp = 2;
-                this.esforco = 10;
+                this.maxEffort = 10;
                 this.specialPower = "you shall not pass";
                 this.spPowerCost = 3;
                 this.live = true;
@@ -96,86 +96,87 @@ public class character {
 
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    private void setName(String name) {
         this.name = name;
     }
 
-    public int getLife() {
+    private int getLife() {
         return life;
     }
 
-    public void setLife(int life) {
+    private void setLife(int life) {
         this.life = life;
     }
 
-    public int getXp() {
+    private int getXp() {
         return xp;
     }
 
-    public void setXp(int xp) {
+    private void setXp(int xp) {
         this.xp = xp;
     }
 
-    public int getAtk() {
+    private int getAtk() {
         return atk;
     }
 
-    public void setAtk(int atk) {
+    private void setAtk(int atk) {
         this.atk = atk;
     }
 
-    public int getMana() {
-        return esforco;
+    private int getMaxEffort() {
+        return maxEffort;
     }
 
-    public void setMana(int mana) {
-        this.esforco = mana;
+    private void setMaxEffort(int mana) {
+        this.maxEffort = mana;
     }
 
-    public String getSpecialPower() {
+    private String getSpecialPower() {
         return specialPower;
     }
 
-    public void setSpecialPower(String specialPower) {
+    private void setSpecialPower(String specialPower) {
         this.specialPower = specialPower;
     }
 
-    public int getSpPowerCost() {
+    private int getSpPowerCost() {
         return spPowerCost;
     }
 
-    public void setSpPowerCost(int spPowerCost) {
+    private void setSpPowerCost(int spPowerCost) {
         this.spPowerCost = spPowerCost;
     }
 
-    public String getGender() {
+    private String getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    private void setGender(String gender) {
         this.gender = gender;
     }
 
-    public String getType() {
+    private String getType() {
         return type;
     }
 
-    public void setType(String type) {
+    private void setType(String type) {
         this.type = type;
     }
 
-    public boolean isLive() {
+    private boolean isLive() {
         return live;
     }
 
-    public void setLive(boolean live) {
+    private void setLive(boolean live) {
         this.live = live;
     }
 
+    @Override
     public void showStatus(){
         System.out.println("\n Personagem: "+ name);
         System.out.println(" Vida: "+ life);
@@ -183,9 +184,10 @@ public class character {
         System.out.println(" Ataque: "+ atk);
         System.out.println(" Classe: "+ type);
         System.out.println(" Gênero: "+ gender);
-        System.out.println(" Mana: "+ esforco);
+        System.out.println(" Mana: "+ maxEffort);
     }
 
+    @Override
     public int rollDie(){
         Random die = new Random();
         int range5die = 1 + die.nextInt(10);
@@ -193,10 +195,11 @@ public class character {
         return damage;
     }
 
-    public void attack(character enemy, String specialPower,int spPowerCost){ 
+    @Override
+    public void attack(character enemy){ 
         if (enemy.live){
 
-            if (specialPower.length() == 0){
+            if (this.specialPower.length() == 0){
                 enemy.attacked(this);
                 if (enemy.life <= 0){
                     this.xp += enemy.xp;
@@ -208,7 +211,7 @@ public class character {
                 enemy.attacked(this);
                 int damage = rollDie();
                 enemy.life -= damage;
-                this.esforco -= this.spPowerCost;
+                this.maxEffort -= this.spPowerCost;
                 if (enemy.life <= 0){
                     this.xp += enemy.xp;
                     enemy.live = false;
@@ -225,25 +228,36 @@ public class character {
         }
     }
 
+    @Override
     public void attacked(character enemy){
 
-        if (this.type == "mage" && this.esforco <= 0){
+        if ("mage".equals(this.type) && this.maxEffort <= 0){
             System.out.println("\n Você está sem mana, perdeu esse turno, cuidado do para não ser atacado.");
         } else
         {
             if ("0".equalsIgnoreCase(enemy.specialPower)){
-                this.life -= enemy.atk;
                 System.out.println("\n"+this.name+" foi atacado pelo "+enemy.name+", tomou "+enemy.atk+" de dano! ");
 
             } 
             else{
                 int damage = rollDie();
-                this.life -= damage;
                 System.out.println("\n"+this.name+" foi atacado pelo "+enemy.name+" tomou "+damage+" de dano! ");
                 System.out.println();
             }
         }
         
     }
+
+    //@Override
+    //public void attack() {
+        // TODO Auto-generated method stub
+    //    throw new UnsupportedOperationException("Unimplemented method 'attack'");
+    //}
+
+    //@Override
+    //public void attacked() {
+        // TODO Auto-generated method stub
+    //    throw new UnsupportedOperationException("Unimplemented method 'attacked'");
+    //}
 
 }

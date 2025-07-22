@@ -36,9 +36,9 @@ public class rpgvania {
       
         soldierZombie.showStatus();
         hero.attacked(soldierZombie);
-        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPowerCost());
-        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPowerCost());
-        hero.attack(soldierZombie,hero.getSpecialPower(),hero.getSpPowerCost());
+        hero.attack(soldierZombie);
+        hero.attack(soldierZombie);
+        hero.attack(soldierZombie);
         hero.showStatus();
         soldierZombie.showStatus();
 
