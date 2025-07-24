@@ -27,7 +27,8 @@ public class Luta {
             desafiado.apresentar();
             desafiante.apresentar();
 
-            int vencedor = new Random(2);
+            Random rand = new Random();
+            int vencedor = rand.nextInt(2);
             
             switch (vencedor) {
 
@@ -38,13 +39,13 @@ public class Luta {
                     break; 
 
                 case 1:
-                    System.out.println(desafiado.getNome());
+                    System.out.println("\n O vencedor foi: "+desafiado.getNome());
                     desafiado.ganharLuta();
                     desafiante.perderLuta();    
                     break;
 
                 case 2:
-                    System.out.println(desafiante.getNome());
+                    System.out.println("\n O vencedor foi: "+desafiante.getNome());
                     desafiado.perderLuta();
                     desafiante.ganharLuta();
                     break;

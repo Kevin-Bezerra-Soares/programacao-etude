@@ -19,7 +19,13 @@ public class uec {
         L[4].status();
         L[5].status();
 
-      
+        Luta uec = new Luta();
+
+        uec.marcarLuta(L[0], L[1]);
+        
+        uec.lutar();
+        uec.lutar();
+        
 
     }
 }

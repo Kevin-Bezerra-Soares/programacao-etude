@@ -39,7 +39,7 @@ public class Lutador {
         setDerrotas(getDerrotas() + 1);
 
     }
-    public void empaterLuta(){
+    public void empatarLuta(){
         setEmpates(getEmpates() + 1);
     }
     public Lutador(String nome, String nacionalidade, int idade, double altura, double peso,
