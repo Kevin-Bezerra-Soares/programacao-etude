@@ -13,28 +13,42 @@ public class Lutador {
     private int empates;
 
     public void apresentar(){
+        System.out.println("\n\n Lutador: "+ getNome());
+        System.out.println(" Origem: "+ getNacionalidade());
+        System.out.println(" "+getIdade() +" anos. ");
+        System.out.printf(" %.2f m de altura. ",getAltura());
+        System.out.printf(" Pesando: %.2f Kg",getPeso());
+        System.out.println(" Ganhou: "+getVitorias());
+        System.out.println(" Perdeu: "+getDerrotas());
+        System.out.println(" Empatou: "+getEmpates());
 
     }
     public void status(){
+        System.out.println("\n\n"+getNome());
+        System.out.println(" é um peso "+getCategoria());
+        System.out.println(getVitorias()+" vitórias ");
+        System.out.println(getDerrotas()+" derrotas ");
+        System.out.println(getEmpates()+" empates ");
 
     }
     public void ganharLuta(){
+        setVitorias(getVitorias() + 1);
 
     }
     public void perderLuta(){
+        setDerrotas(getDerrotas() + 1);
 
     }
     public void empaterLuta(){
-        
+        setEmpates(getEmpates() + 1);
     }
-    public Lutador(String nome, String nacionalidade, int idade, double altura, double peso, String categoria,
+    public Lutador(String nome, String nacionalidade, int idade, double altura, double peso,
             int vitorias, int derrotas, int empates) {
         this.nome = nome;
         this.nacionalidade = nacionalidade;
         this.idade = idade;
         this.altura = altura;
-        this.peso = peso;
-        this.categoria = categoria;
+        setPeso(peso);
         this.vitorias = vitorias;
         this.derrotas = derrotas;
         this.empates = empates;

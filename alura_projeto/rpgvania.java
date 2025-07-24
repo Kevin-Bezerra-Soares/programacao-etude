@@ -35,7 +35,7 @@ public class rpgvania {
         character soldierZombie = new character("Soldado Zumbi");
       
         soldierZombie.showStatus();
-        hero.attacked(soldierZombie);
+        soldierZombie.attack(hero);
         hero.attack(soldierZombie);
         hero.attack(soldierZombie);
         hero.attack(soldierZombie);

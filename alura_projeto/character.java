@@ -41,16 +41,16 @@ public class character implements personagem {
                 this.setXp(1);
                 this.setType("Zumbi");
                 this.setLive(true);
-                this.setSpecialPower("0");
+                this.setSpecialPower("");
                 break;
             
             case "Soldado Zumbi":
-                setLife(10);
-                this.atk = 3;
-                this.type = "zombie";
-                this.xp = 3;
-                this.live = true;
-                this.specialPower="0";
+                this.setLife(10);
+                this.setAtk(3);
+                this.setType("zombie"); 
+                this.setXp(3); 
+                this.setLive(true); 
+                this.setSpecialPower("");
                 break;
         }
 
@@ -168,7 +168,7 @@ public class character implements personagem {
         this.type = type;
     }
 
-    private boolean isLive() {
+    private boolean getLive() {
         return live;
     }
 
@@ -199,16 +199,20 @@ public class character implements personagem {
     public void attack(character enemy){ 
         if (enemy.live){
 
-            if (this.specialPower.length() == 0){
-                enemy.attacked(this);
+            if (this.getSpecialPower().length() == 0){
+                
+                enemy.life -= this.atk;
+
                 if (enemy.life <= 0){
-                    this.xp += enemy.xp;
+                    this.xp += enemy.atk;
                     enemy.live = false;
-                    System.out.println("\n"+this.name+" matou o "+enemy.name);
+                    System.out.println("\n"+this.name+" matou o "+enemy.name+" o dano foi de "+this.atk);
+                } else{
+                    System.out.printf("\n O desgraçado ainda está vivo e tomou %d de dano. ", this.atk);
                 }
             }
             else {
-                enemy.attacked(this);
+               
                 int damage = rollDie();
                 enemy.life -= damage;
                 this.maxEffort -= this.spPowerCost;
@@ -228,25 +232,7 @@ public class character implements personagem {
         }
     }
 
-    @Override
-    public void attacked(character enemy){
 
-        if ("mage".equals(this.type) && this.maxEffort <= 0){
-            System.out.println("\n Você está sem mana, perdeu esse turno, cuidado do para não ser atacado.");
-        } else
-        {
-            if ("0".equalsIgnoreCase(enemy.specialPower)){
-                System.out.println("\n"+this.name+" foi atacado pelo "+enemy.name+", tomou "+enemy.atk+" de dano! ");
-
-            } 
-            else{
-                int damage = rollDie();
-                System.out.println("\n"+this.name+" foi atacado pelo "+enemy.name+" tomou "+damage+" de dano! ");
-                System.out.println();
-            }
-        }
-        
-    }
 
     //@Override
     //public void attack() {
