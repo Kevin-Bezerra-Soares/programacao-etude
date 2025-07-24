@@ -27,8 +27,30 @@ public class Luta {
             desafiado.apresentar();
             desafiante.apresentar();
 
-            //int vencedor = new Random(2);
+            int vencedor = new Random(2);
             
+            switch (vencedor) {
+
+                case 0:
+                    System.out.println("\n Foi um empate! ");
+                    desafiado.empatarLuta();
+                    desafiante.empatarLuta();
+                    break; 
+
+                case 1:
+                    System.out.println(desafiado.getNome());
+                    desafiado.ganharLuta();
+                    desafiante.perderLuta();    
+                    break;
+
+                case 2:
+                    System.out.println(desafiante.getNome());
+                    desafiado.perderLuta();
+                    desafiante.ganharLuta();
+                    break;
+            }
+
+
         } else {
             System.out.println("\n Luta inválida! \n Os lutadores precisam ser da mesma categoria e não podem ser a mesma pessoa.\n");
         }
@@ -37,7 +59,7 @@ public class Luta {
     public Lutador getDesafiado() {
         return desafiado;
     }
-
+  
     public void setDesafiado(Lutador desafiado) {
         this.desafiado = desafiado;
     }
