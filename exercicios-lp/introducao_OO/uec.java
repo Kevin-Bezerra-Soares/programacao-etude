@@ -12,13 +12,6 @@ public class uec {
         L[4] = new Lutador("UFOCobol", "Brasil", 37, 1.70f, 119.3f, 5, 4, 3);
         L[5] = new Lutador("Nerdaart", "EUA", 30, 1.81f, 105.7f, 12, 2, 4);   
 
-        L[0].status();
-        L[1].status();
-        L[2].status();
-        L[3].status();
-        L[4].status();
-        L[5].status();
-
         Luta uec = new Luta();
 
         uec.marcarLuta(L[0], L[1]);

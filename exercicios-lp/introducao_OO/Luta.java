@@ -8,46 +8,49 @@ public class Luta {
     private boolean aprovada;
 
     public void marcarLuta(Lutador L1,Lutador L2){
-        if (L1.getCategoria() == L2.getCategoria() && L1 != L2){
-            aprovada = true;
-            desafiado = L1;
-            desafiante = L2;
+        if (L1.getCategoria().equals(L2.getCategoria()) && L1 != L2){
+            this.aprovada = true;
+            this.desafiado = L1;
+            this.desafiante = L2;
 
         } else{
-            aprovada = false;
-            desafiante = null;
-            desafiado = null;
+            this.aprovada = false;
+            this.desafiante = null;
+            this.desafiado = null;
             
         }
 
     }
 
     public void lutar(){
-        if (aprovada){
-            desafiado.apresentar();
-            desafiante.apresentar();
+        if (this.aprovada){
+            System.out.println("\n |||| DESAFIADO ||||");
+            this.desafiado.apresentar();
+
+            System.out.println("\n |||| DESAFIANTE ||||");
+            this.desafiante.apresentar();
 
             Random rand = new Random();
-            int vencedor = rand.nextInt(2);
+            int vencedor = rand.nextInt(3);
             
             switch (vencedor) {
 
                 case 0:
                     System.out.println("\n Foi um empate! ");
-                    desafiado.empatarLuta();
-                    desafiante.empatarLuta();
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
                     break; 
 
                 case 1:
-                    System.out.println("\n O vencedor foi: "+desafiado.getNome());
-                    desafiado.ganharLuta();
-                    desafiante.perderLuta();    
+                    System.out.println("\n O vencedor foi: "+ this.desafiado.getNome());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();    
                     break;
 
                 case 2:
-                    System.out.println("\n O vencedor foi: "+desafiante.getNome());
-                    desafiado.perderLuta();
-                    desafiante.ganharLuta();
+                    System.out.println("\n O vencedor foi: "+this.desafiante.getNome());
+                    this.desafiado.perderLuta();
+                    this.desafiante.ganharLuta();
                     break;
             }
 
